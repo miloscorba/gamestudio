@@ -1,4 +1,4 @@
-package sk.tuke.gamestudio;
+package sk.tuke.gamestudio.games;
 
 public interface Game {
     void run();

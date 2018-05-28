@@ -1,16 +1,14 @@
 package sk.tuke.gamestudio.games.stones;
 
-import sk.tuke.gamestudio.Game;
+import sk.tuke.gamestudio.games.Game;
 import sk.tuke.gamestudio.games.stones.Settings.Settings;
 import sk.tuke.gamestudio.games.stones.Settings.TimeWatch;
 import sk.tuke.gamestudio.games.stones.consoleui.ConsoleUI;
 import sk.tuke.gamestudio.games.stones.consoleui.UserInterface;
 import sk.tuke.gamestudio.games.stones.core.Field;
 import sk.tuke.gamestudio.games.stones.core.GameState;
-import sk.tuke.gamestudio.service.ScoreException;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 

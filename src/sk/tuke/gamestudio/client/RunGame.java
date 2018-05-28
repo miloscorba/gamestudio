@@ -1,8 +1,6 @@
 package sk.tuke.gamestudio.client;
 
-import sk.tuke.gamestudio.Game;
-import sk.tuke.gamestudio.entity.Comment;
-import sk.tuke.gamestudio.entity.Rating;
+import sk.tuke.gamestudio.games.Game;
 import sk.tuke.gamestudio.entity.Score;
 import sk.tuke.gamestudio.games.hangman.Hangman;
 import sk.tuke.gamestudio.games.mines.Minesweeper;
@@ -10,7 +8,6 @@ import sk.tuke.gamestudio.games.stones.Stones;
 
 import java.io.*;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 

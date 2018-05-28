@@ -1,6 +1,6 @@
 package sk.tuke.gamestudio.games.hangman;
 
-import sk.tuke.gamestudio.Game;
+import sk.tuke.gamestudio.games.Game;
 
 import java.io.*;
 import java.util.ArrayList;

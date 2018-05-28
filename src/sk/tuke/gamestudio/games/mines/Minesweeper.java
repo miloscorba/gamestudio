@@ -1,7 +1,6 @@
 package sk.tuke.gamestudio.games.mines;
 
-import sk.tuke.gamestudio.Game;
-import sk.tuke.gamestudio.entity.Score;
+import sk.tuke.gamestudio.games.Game;
 import sk.tuke.gamestudio.games.mines.Settings.Settings;
 import sk.tuke.gamestudio.games.mines.consoleui.ConsoleUI;
 import sk.tuke.gamestudio.games.mines.consoleui.UserInterface;
@@ -11,7 +10,6 @@ import sk.tuke.gamestudio.games.stones.Settings.TimeWatch;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Main application class.
