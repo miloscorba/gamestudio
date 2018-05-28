@@ -6,7 +6,7 @@ import java.io.Serializable;
 @Entity
 @NamedQueries({
         @NamedQuery(name = "Score.getBestScoresForGame",
-                query = "SELECT s FROM Score s WHERE s.game=:game ORDER BY s.score ASC"),
+                query = "SELECT s FROM Score s WHERE s.game=:game ORDER BY s.score DESC"),
 })
 
 public class Score implements Serializable {

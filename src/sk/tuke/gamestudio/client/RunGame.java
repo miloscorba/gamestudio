@@ -1,57 +1,78 @@
 package sk.tuke.gamestudio.client;
 
 import sk.tuke.gamestudio.Game;
+import sk.tuke.gamestudio.entity.Comment;
+import sk.tuke.gamestudio.entity.Rating;
 import sk.tuke.gamestudio.entity.Score;
+import sk.tuke.gamestudio.games.hangman.Hangman;
 import sk.tuke.gamestudio.games.mines.Minesweeper;
-import sk.tuke.gamestudio.games.stones.Settings.TimeWatch;
 import sk.tuke.gamestudio.games.stones.Stones;
 
 import java.io.*;
-import java.util.concurrent.TimeUnit;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 
 public class RunGame {
-    public static final String ANSI_RESET = "\u001B[0m";
-    public static final String ANSI_RED = "\u001B[31m";
-    public static final String ANSI_BLUE = "\u001B[34m";
-    public static final String ANSI_GREEN = "\u001B[32m";
-    public static String nameOfPlayer;
+    private static final String ANSI_RESET = "\u001B[0m";
+    private static final String ANSI_RED = "\u001B[31m";
+    private static final String ANSI_BLUE = "\u001B[34m";
+    private static final String ANSI_GREEN = "\u001B[32m";
+    private static String nameOfPlayer;
 
-    public static RatingRestServiceClient rrsc = new RatingRestServiceClient();
-    public static CommentRestServiceClient crsc = new CommentRestServiceClient();
-    public static ScoreRestServiceClient srsc = new ScoreRestServiceClient();
+    private static RatingRestServiceClient rrsc = new RatingRestServiceClient();
+    private static CommentRestServiceClient crsc = new CommentRestServiceClient();
+    private static ScoreRestServiceClient srsc = new ScoreRestServiceClient();
+    private static Map<Integer, Game> games;
+
+    private static void addGamesToMap(Map<Integer, Game> games){
+        games.put(1, new Stones());
+        games.put(2, new Minesweeper());
+        games.put(3, new Hangman());
+
+    }
 
     public static void main(String[] args) throws Exception {
+        games = createMapOfGames();
 
         System.out.println(ANSI_GREEN + "-------------------------------------------------------------------------------");
         System.out.println("* * * * * * * *    S T A R T I N G   |   G a M E   S T U D i O  * * * * * * * *" + ANSI_RESET);
         System.out.println("> > > Enter your name, please: ");
         nameOfPlayer = getInput();
-        System.out.flush();
 
         while(true) {
+            Game game = null;
+
             menuPrint();
             String input = getInput();
-            Game game;
-            switch (input.toLowerCase().charAt(0)) {
-                case '1':
-                    game = new Stones();
-                    menuGamePrint(game);
-                    break;
-                case '2':
-                    game = new Minesweeper();
-                    menuGamePrint(game);
-                    break;
-                case 'c':
+
+            switch (input){
+                case "c":
                     crsc.printList(crsc.getAllComments(), null);
                     break;
-                case 'x':
-                    System.out.println(ANSI_GREEN + ">>>>>>>>>> G O O D   B Y E <<<<<<<<<" +ANSI_RESET);
+                case "x":
                     return;
-                default:
-                    System.out.println(ANSI_RED + "Choose again, because you choose WRONG!" + ANSI_RESET);
+
             }
+            try {
+                game = games.get(Integer.parseInt(input));
+            } catch (NumberFormatException e) {
+                System.out.println("Bad input, try it again!");
+            }
+            if(game != null) {
+                menuGamePrint(game);
+                continue;
+            }
+            System.out.println("Bad input, try it again!");
         }
+
+    }
+
+    private static Map<Integer, Game> createMapOfGames() {
+        Map<Integer, Game> games = new HashMap<>();
+        addGamesToMap(games);
+        return games;
     }
 
     private static String getInput() {
@@ -111,15 +132,20 @@ public class RunGame {
     public static void menuPrint() {
         printWelcomeWithWait();
         try {
-            Thread.sleep(100);
+            Thread.sleep(20);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("\nG A M E S  (rating) :\n" + ANSI_GREEN
-                + "1 >> Stones (" + rrsc.averageRating("Stones").substring(0,3) + ")" + "\n"
-                + "2 >> Minesweeper (" + rrsc.averageRating("Minesweeper").substring(0,3) + ")" + "\n"
-                + ANSI_RESET);
-        System.out.println("CoMMeNTs: " + ANSI_GREEN + "C " + ANSI_RESET + "- get all comments ");
+
+        games.entrySet().stream().forEach(m ->
+                System.out.println( ANSI_GREEN +
+                        m.getKey()
+                        + ". " + m.getValue().getClass().getSimpleName()
+                        + " ("
+                        + rrsc.averageRating(m.getValue().getClass().getSimpleName()).substring(0,3)
+                        + ")" + ANSI_RESET));
+
+        System.out.println("\nCoMMeNTs: " + ANSI_GREEN + "C " + ANSI_RESET + "- get all comments ");
         System.out.println("EXiT: " + ANSI_GREEN + "X " + ANSI_RESET);
         System.out.println("Choose wisely. Your option: " + ANSI_RESET);
     }

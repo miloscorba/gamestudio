@@ -92,7 +92,6 @@ public class CommentRestServiceClient implements CommentService {
             }
             System.out.println();
         }
-
     }
 
     public void createComment(Class clazz, String nameOfPlayer){

@@ -19,6 +19,7 @@ public class Stones implements Game {
     private int Score;
     public Stones() {
     }
+
     public Settings settings;
     public double score;
 

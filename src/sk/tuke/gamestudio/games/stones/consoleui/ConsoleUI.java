@@ -51,10 +51,8 @@ public class ConsoleUI implements UserInterface, Serializable {
                 System.out.println(ANSI_YELLOW + "------------------------");
                 System.out.println("New game created." + ANSI_RESET);
                 watch.reset();
-
                 return;
             }
-
         } while(true);
     }
 

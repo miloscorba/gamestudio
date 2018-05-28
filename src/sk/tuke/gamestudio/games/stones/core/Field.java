@@ -90,9 +90,6 @@ public class Field implements Serializable {
         }
     }
 
-    // (parameters) -> expression
-    // (parameters) -> { statements; }
-
     public void move(Direction direction) {
         if(!isPosibleMove(direction)) {
             System.out.println(ANSI_RED + "************************");

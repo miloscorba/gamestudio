@@ -25,7 +25,7 @@ public class Minesweeper implements Game {
     /**
      * Constructor.
      */
-    public Minesweeper() throws Exception{
+    public Minesweeper(){
 
     }
 
