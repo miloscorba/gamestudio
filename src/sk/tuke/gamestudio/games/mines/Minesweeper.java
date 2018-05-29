@@ -10,6 +10,7 @@ import sk.tuke.gamestudio.games.stones.Settings.TimeWatch;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Main application class.
@@ -17,41 +18,16 @@ import java.io.InputStreamReader;
 public class Minesweeper implements Game {
     /** User interface. */
     private UserInterface userInterface;
-    private long startMillis;
+    private TimeWatch watch;
     private Minesweeper instance;
     private Settings settings;
+    private double score;
     /**
      * Constructor.
      */
     public Minesweeper(){
 
     }
-
-    public void choosesetting() throws IOException {
-        System.out.println("************ M I N E S W E E P E R ************");
-        while(true){
-            System.out.println("Options: 1 - Begginer, 2 - Intermediate, 3 - Expert");
-            System.out.println("Choose: ");
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String input = br.readLine();
-            switch(input) {
-                case "1":   setSettings(Settings.BEGINNER);
-                            return;
-                case "2":   setSettings(Settings.INTERMEDIATE);
-                            return;
-                case "3":   setSettings(Settings.EXPERT);
-                            return;
-                 default:
-                     System.out.println("Try again -_- ");
-            }
-        }
-    }
-
-    public int getPlayingSeconds(){
-        long time = System.currentTimeMillis() - startMillis;
-        return  (int) time;
-    }
-
 
     public Minesweeper getInstance() {
         return instance;
@@ -67,9 +43,7 @@ public class Minesweeper implements Game {
 
     @Override
     public void run()  {
-        TimeWatch watch = TimeWatch.start();
-//        Score score = new Score(nameOfPlayer, clazz.getSimpleName (), (int) watch.time(TimeUnit.SECONDS));
-//        srsc.addScore(score);
+        this.watch = TimeWatch.start();
         instance = this;
         try {
             choosesetting();
@@ -78,20 +52,43 @@ public class Minesweeper implements Game {
         }
         userInterface = new ConsoleUI();
         Field field = new Field(settings.getRowCount(), settings.getColumnCount(), settings.getMineCount());
-        startMillis = System.currentTimeMillis();
-        userInterface.newGameStarted(field);
+        this.watch = TimeWatch.start();
+        if(userInterface.newGameStarted(field))
+        {
+            score = getScore();
+        } else {
+            score = 0;
+        }
+    }
+
+    public void setScore() {
+        this.score = (settings.getColumnCount()*settings.getRowCount()+settings.getMineCount()*2)
+                %watch.time(TimeUnit.SECONDS);
     }
 
     @Override
     public double getScore() {
-        return 0;
+        return this.score;
     }
 
-    /**
-     * Main method.
-     * @param args arguments
-     */
-
-
+    public void choosesetting() throws IOException {
+        System.out.println("************ M I N E S W E E P E R ************");
+        while(true){
+            System.out.println("Options: 1 - Begginer, 2 - Intermediate, 3 - Expert");
+            System.out.println("Choose: ");
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+            String input = br.readLine();
+            switch(input) {
+                case "1":   setSettings(Settings.BEGINNER);
+                    return;
+                case "2":   setSettings(Settings.INTERMEDIATE);
+                    return;
+                case "3":   setSettings(Settings.EXPERT);
+                    return;
+                default:
+                    System.out.println("Try again -_- ");
+            }
+        }
+    }
 
 }

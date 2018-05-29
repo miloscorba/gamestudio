@@ -11,36 +11,37 @@ import sk.tuke.gamestudio.games.stones.core.GameState;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.concurrent.TimeUnit;
 
 public class Stones implements Game {
     private UserInterface userInterface;
-    private int Score;
+    private Settings settings;
+    private double score;
+    private TimeWatch watch;
+
     public Stones() {
     }
-
-    public Settings settings;
-    public double score;
 
     @Override
     public void run() {
         userInterface = new ConsoleUI();
         Field field;
-        TimeWatch watch = TimeWatch.start();
-
+        watch = TimeWatch.start();
         do {
             try {
                 choosesetting();
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            watch.reset();
             field = new Field(settings);
+            watch.reset();
             userInterface.newGameStarted(field);
             if(field.getState() == GameState.EXIT){
+                score=0;
                 return;
             }
             if(field.getState() == GameState.SOLVED){
-                score = field.getScore();
+                score = setScore();
             }
         } while (field.getState() == GameState.NEWGAME);
     }
@@ -71,6 +72,11 @@ public class Stones implements Game {
                     System.out.println("Try again -_- ");
             }
         }
+    }
+
+    public double setScore() {
+        return (settings.getColumnCount()*settings.getRowCount()*settings.getCoeficient())
+                %watch.time(TimeUnit.SECONDS);
     }
 
     @Override

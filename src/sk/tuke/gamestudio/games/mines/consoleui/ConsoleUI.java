@@ -43,10 +43,10 @@ public class ConsoleUI implements UserInterface {
      * @param field field of mines and clues
      */
     @Override
-    public void newGameStarted(Field field) {
+    public boolean newGameStarted(Field field) {
         this.field = field;
         System.out.println("************ M I N E S W E E P E R ************");
-        do {
+        while(true) {
             update();
             try {
                 processInput();
@@ -61,16 +61,16 @@ public class ConsoleUI implements UserInterface {
                 System.out.println("------------------------------------------------" + ANSI_RESET);
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
                 //bestTimes.addPlayerTime(input, (int) watch.time(TimeUnit.SECONDS), "Mines");
-                break;
+                return true;
             }
             else if(field.getState() == GameState.FAILED){
                 update();
                 System.out.println(ANSI_RED + "-------------------------");
                 System.out.println("You lost :(((" + ANSI_RESET + "\n\n");
 
-                break;
+                return false;
             }
-        } while(true);
+        }
     }
     
     /**
@@ -117,7 +117,7 @@ public class ConsoleUI implements UserInterface {
                 if(tile.getState().equals(Tile.State.CLOSED) && column >= 11)
                     System.out.printf("  -");
                 else if (field.getTile(row,column).getState() == Tile.State.MARKED)
-                    System.out.printf(ANSI_BLUE + " M" + ANSI_RESET);
+                    System.out.printf(ANSI_BLUE + "  M" + ANSI_RESET);
                 else if ((field.getTile(row,column).getState() == Tile.State.OPEN) &&
                     field.getTile(row,column) instanceof Clue)
                     System.out.printf("  " + ((Clue) field.getTile(row,column)).getValue() );
@@ -169,9 +169,6 @@ public class ConsoleUI implements UserInterface {
         Matcher matcher = pattern.matcher(input.toLowerCase());
         if (input.toUpperCase().equals("X")) {
             field.setState(GameState.FAILED);
-
-        } else if (input.toUpperCase().equals("T")) {
-            //System.out.println(bestTimes.toString());
 
         } else if (matcher.matches()) {
             row = input.toLowerCase().charAt(1) - 'a';

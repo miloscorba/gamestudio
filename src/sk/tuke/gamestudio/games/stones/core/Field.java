@@ -17,34 +17,14 @@ public class Field implements Serializable {
     private Stone[][] stones;
     public GameState state = GameState.PLAYING;
     private StoneMoveable stoneMoveable;
-    private double score;
-    private double coeficient;
 
     public Field(Settings settings) {
         this.rowCount = settings.getRowCount();
         this.columnCount = settings.getColumnCount();
         generate();
         getMoveAbleStone();
-        getScore(settings);
     }
 
-    private void getScore(Settings settings) {
-        if(settings == Settings.BEGINNER) {
-            score = 1000;
-            coeficient = 0.75;
-        } else if (settings == Settings.INTERMEDIATE) {
-            score = 3000;
-            coeficient = 0.9;
-        } else if (settings == Settings.EXPERT) {
-            score = 5000;
-            coeficient = 0.98;
-        }
-    }
-
-
-    public void setScore(double score) {
-        this.score = score;
-    }
 
     public int getRowCount() {
         return rowCount;
@@ -64,10 +44,6 @@ public class Field implements Serializable {
 
     public void setState(GameState state) {
         this.state = state;
-    }
-
-    public double getScore() {
-        return score;
     }
 
     public void generate() {
@@ -99,7 +75,6 @@ public class Field implements Serializable {
         if(isSolved()){
             state = GameState.SOLVED;
         }
-        score *= coeficient;
     }
 
     private boolean isPosibleMove(Direction direction) throws  IndexOutOfBoundsException{

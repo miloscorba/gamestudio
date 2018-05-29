@@ -47,7 +47,7 @@ public class RunGame {
             switch (input){
                 case "c":
                     crsc.printList(crsc.getAllComments(), null);
-                    break;
+                    continue;
                 case "x":
                     return;
 

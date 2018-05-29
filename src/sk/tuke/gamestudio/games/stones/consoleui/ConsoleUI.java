@@ -27,7 +27,6 @@ public class ConsoleUI implements UserInterface, Serializable {
 
     public static final String FILENAME = "savedPlay.bin";
     File fileSaved = new File(FILENAME);
-    public double score = 300;
     public ScoreRestServiceClient scoreService = new ScoreRestServiceClient();
     TimeWatch watch = TimeWatch.start();
 
@@ -113,7 +112,6 @@ public class ConsoleUI implements UserInterface, Serializable {
                     break;
             case "x":
                 field.state = GameState.EXIT;
-                field.setScore(0d);
                 break;
         }
     }
@@ -123,22 +121,5 @@ public class ConsoleUI implements UserInterface, Serializable {
             System.out.printf(ANSI_GREEN + "+-----");
         }
         System.out.print("+" + ANSI_RESET);
-    }
-
-    @Override
-    public void save() throws  Exception {
-        try (FileOutputStream os = new FileOutputStream(FILENAME, false);
-             ObjectOutputStream oos = new ObjectOutputStream(os);) {
-            oos.writeObject(field);
-        }
-        field.state = GameState.EXIT;
-    }
-
-    @Override
-    public Field load() throws Exception {
-        try (FileInputStream is = new FileInputStream(FILENAME);
-             ObjectInputStream ois = new ObjectInputStream(is)) {
-            return (Field) ois.readObject();
-        }
     }
 }

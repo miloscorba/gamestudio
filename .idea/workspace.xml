@@ -12,9 +12,57 @@
   <component name="ChangeListManager">
     <list default="true" id="a071ff4c-f77f-4152-80b2-2d8553d3477b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Notebook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/RatingID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/hangman/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/client/RunGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/client/RunGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/entity/Notebook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/entity/RatingID.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/entity/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/entity/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/hangman/Hangman.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/hangman/Hangman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/hangman/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/mines/Minesweeper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/mines/Minesweeper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/Settings/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/Settings/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/Stones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/Stones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/core/Field$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/core/Field$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/core/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_ejb_exploded/sk/tuke/gamestudio/games/stones/core/Field.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/client/RunGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/client/RunGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/entity/Notebook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/entity/RatingID.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/entity/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/entity/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/hangman/Hangman.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/hangman/Hangman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/hangman/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/mines/Minesweeper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/mines/Minesweeper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/Settings/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/Settings/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/Stones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/Stones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/core/Field$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/core/Field$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/core/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/gamestudio_war_exploded/WEB-INF/classes/sk/tuke/gamestudio/games/stones/core/Field.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/mines/Minesweeper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/mines/Minesweeper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/Settings/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/Settings/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/Stones.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/Stones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/core/Field$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/core/Field$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/core/Field.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/gamestudio/sk/tuke/gamestudio/games/stones/core/Field.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RunGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RunGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Minesweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Minesweeper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Stones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Stones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Field.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,43 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RunGame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RunGame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RunGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6955#6956#0" expanded="true" />
-                <element signature="e#6980#6981#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Stone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Score.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Score.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="8" column="87" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hangman.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/hangman/Hangman.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="99" column="59" selection-start-line="99" selection-start-column="59" selection-end-line="99" selection-end-column="59" />
+            <state relative-caret-position="293">
+              <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,20 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Minesweeper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Minesweeper.java">
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentRestServiceClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/CommentRestServiceClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+            <state relative-caret-position="120">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -96,31 +103,72 @@
       <file leaf-file-name="Stones.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Stones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="560">
+              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2465#2466#0" expanded="true" />
-                <element signature="e#2493#2494#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tile.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/core/Tile.java">
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/Settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="460">
+              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rating.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Rating.java">
+      <file leaf-file-name="Minesweeper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Minesweeper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="13" column="77" selection-start-line="13" selection-start-column="77" selection-end-line="13" selection-end-column="77" />
+            <state relative-caret-position="900">
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <folding>
+                <element signature="e#1850#1851#0" expanded="true" />
+                <element signature="e#1883#1884#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsoleUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentRestServiceClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/CommentRestServiceClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Settings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Settings/Settings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -128,7 +176,7 @@
       <file leaf-file-name="RatingRestServiceClient.java" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RatingRestServiceClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="460">
               <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
@@ -148,10 +196,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>HALL</find>
-      <find>jp</find>
-      <find>getAllComments</find>
-      <find>----------</find>
       <find>ra</find>
       <find>-A----</find>
       <find>---------</find>
@@ -161,8 +205,8 @@
       <find>time</find>
       <find>move</find>
       <find>ga</find>
-      <find>omment, RC &gt;&gt; ran</find>
-      <find>You want to comment or rank game?</find>
+      <find />
+      <find />
       <find>Beg</find>
       <find>Stones</find>
       <find>mine</find>
@@ -174,10 +218,14 @@
       <find>guessWords</find>
       <find>getAllRatingsOfGame</find>
       <find>Not</find>
-      <find>* * * * * * * * HANGMAN * * * * * * * *</find>
-      <find>Error loading rating</find>
+      <find />
+      <find />
       <find>isChange</find>
-      <find>* * * * * * * *</find>
+      <find />
+      <find>FAILE</find>
+      <find>M&quot;</find>
+      <find>|</find>
+      <find>row</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -186,15 +234,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/UserInterface.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/core/Field.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Settings.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/BestTimes.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/BestTimes.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/ConsoleUI.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Direction.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/score/BestTimes.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/service/ScoreService.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/service/CommentService.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/service/Service.java" />
@@ -220,23 +264,27 @@
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/webservice/RatingRestService.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/service/AchievementBean.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/service/ScoreServiceImplJPA.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Direction.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Rating.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/client/Settings.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/client/SetSettings.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/Settings.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/Game.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/client/ScoreRestServiceClient.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/client/CommentRestServiceClient.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Minesweeper.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Field.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Stones.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RunGame.java" />
-        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/hangman/Hangman.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Score.java" />
         <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/hangman/Main.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/Game.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/SetSettings.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Field.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/Settings.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Stones.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/hangman/Hangman.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Minesweeper.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.java" />
+        <option value="$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RunGame.java" />
       </list>
     </option>
   </component>
@@ -324,7 +372,42 @@
               <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
-              <item name="webservice" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="hangman" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamestudio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="mines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamestudio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="mines" type="462c0819:PsiDirectoryNode" />
+              <item name="consoleui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamestudio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="mines" type="462c0819:PsiDirectoryNode" />
+              <item name="Settings" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gamestudio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gamestudio" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
+              <item name="stones" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gamestudio" type="b2602c69:ProjectViewProjectNode" />
@@ -356,6 +439,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sk.tuke.gamestudio.games" />
       <recent name="sk.tuke.gamestudio.games.stones.Settings" />
       <recent name="sk.tuke.gamestudio.client" />
       <recent name="sk.tuke.gamestudio.service" />
@@ -566,15 +650,17 @@
       <workItem from="1527166877110" duration="10727000" />
       <workItem from="1527188115782" duration="8313000" />
       <workItem from="1527233206767" duration="26533000" />
-      <workItem from="1527487707044" duration="21610000" />
+      <workItem from="1527487707044" duration="27609000" />
+      <workItem from="1527575635786" duration="199000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160576000" />
+    <option name="totallyTimeSpent" value="166575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="-266" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="8" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.0734375" side_tool="true" weight="1.0" />
@@ -592,24 +678,24 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.3299435" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
-      <window_info anchor="right" x="0" y="0" width="274" height="800" id="Documentation" order="10" side_tool="true" weight="0.3265625" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9265625" weight="0.19548023" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9265625" visible="true" weight="0.39322034" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.33333334" />
       <window_info id="Persistence" order="2" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25234374" />
       <window_info anchor="right" id="Bean Validation" order="0" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.4881356" />
       <window_info id="EJB" order="5" side_tool="true" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.3299435" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3296875" />
+      <window_info anchor="right" x="0" y="0" width="274" height="800" id="Documentation" order="10" side_tool="true" weight="0.3265625" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4881356" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3296875" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -624,18 +710,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding>
-            <element signature="e#1162#1163#0" expanded="true" />
-            <element signature="e#1194#1195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RankGame.java" />
     <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/CommentGame.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Class.java">
@@ -714,16 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -752,20 +816,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1480">
-          <caret line="82" column="54" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -790,38 +844,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Settings/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1452">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Direction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="45" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-912">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
@@ -839,26 +865,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/Settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/TimeWatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -870,11 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -885,29 +886,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/CommentRestServiceClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RatingRestServiceClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="460">
           <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RunGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="155" column="36" lean-forward="true" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6955#6956#0" expanded="true" />
-            <element signature="e#6980#6981#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,20 +900,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/RatingID.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Notebook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/RatingID.java" />
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Notebook.java" />
     <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/entity/Rating.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -939,42 +909,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/hangman/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/core/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/SetSettings.java" />
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/core/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-372">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/TimeWatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/UserInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/consoleui/ConsoleUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="113" column="45" lean-forward="true" selection-start-line="113" selection-start-column="45" selection-end-line="113" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/hangman/Hangman.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="99" column="59" selection-start-line="99" selection-start-column="59" selection-end-line="99" selection-end-column="59" />
+        <state relative-caret-position="320">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4753#4754#0" expanded="true" />
+            <element signature="e#4821#4822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Settings/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/UserInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Stones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Settings/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/Minesweeper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/hangman/Main.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/stones/Stones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="900">
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2465#2466#0" expanded="true" />
-            <element signature="e#2493#2494#0" expanded="true" />
+            <element signature="e#1850#1851#0" expanded="true" />
+            <element signature="e#1883#1884#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/core/Tile.java">
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/games/mines/consoleui/ConsoleUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        <state relative-caret-position="309">
+          <caret line="196" lean-forward="true" selection-start-line="196" selection-end-line="196" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/CommentRestServiceClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sk/tuke/gamestudio/client/RunGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

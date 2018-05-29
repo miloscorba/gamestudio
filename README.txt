@@ -13,6 +13,7 @@ gamestudio
 |	
 |---games 
 |	|--- Game.class (interface)
+|	|
 |	|--- hangman 
 |	|	|--- Hangman.class
 |	|
