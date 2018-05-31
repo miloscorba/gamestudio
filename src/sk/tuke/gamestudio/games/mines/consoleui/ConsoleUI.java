@@ -1,12 +1,11 @@
 package sk.tuke.gamestudio.games.mines.consoleui;
 
-import sk.tuke.gamestudio.games.mines.Settings.TimeWatch;
+import sk.tuke.gamestudio.games.TimeWatch;
 import sk.tuke.gamestudio.games.mines.core.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,8 +19,6 @@ public class ConsoleUI implements UserInterface {
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_GREEN = "\u001B[32m";
-
-    TimeWatch watch = TimeWatch.start();
 
     /** Input reader. */
     private BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -60,7 +57,7 @@ public class ConsoleUI implements UserInterface {
                 System.out.println("Wohoooo! YOU WIN !!");
                 System.out.println("------------------------------------------------" + ANSI_RESET);
                 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-                //bestTimes.addPlayerTime(input, (int) watch.time(TimeUnit.SECONDS), "Mines");
+                //bestTimes.addPlayerTime(input, (int) watch.getTime(TimeUnit.SECONDS), "Mines");
                 return true;
             }
             else if(field.getState() == GameState.FAILED){
@@ -91,7 +88,7 @@ public class ConsoleUI implements UserInterface {
                 for (int c = 0; c <= field.getColumnCount(); c++){
                     System.out.print("---");
                 }
-                System.out.println("+" + ANSI_RESET);
+                System.out.println("+-" + ANSI_RESET);
                 System.out.print(ANSI_GREEN);
                 System.out.printf("|     0  ");
                 firstRowSpace = false;
@@ -101,7 +98,7 @@ public class ConsoleUI implements UserInterface {
             else if (column >= 10 )
                 System.out.printf(column + " ");
         }
-        System.out.print(ANSI_RESET);
+        System.out.print("|" + ANSI_RESET);
         System.out.println();
 
         for(int row = 0; row < field.getRowCount(); row++){
@@ -129,11 +126,12 @@ public class ConsoleUI implements UserInterface {
             System.out.println(ANSI_GREEN + " |" + ANSI_RESET);
 
         }
-        System.out.print("+");
+        System.out.print(ANSI_GREEN + "+");
         for (int c = 0; c <= field.getColumnCount(); c++){
             System.out.print("---");
         }
-        System.out.println("+");
+
+        System.out.println("+" + ANSI_RESET);
 
 
     }

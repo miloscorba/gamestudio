@@ -1,40 +1,47 @@
 package sk.tuke.gamestudio.games.hangman;
 
-import sk.tuke.gamestudio.games.Game;
+import sk.tuke.gamestudio.games.AbstractGame;
+import sk.tuke.gamestudio.games.TimeWatch;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Hangman implements Game {
+public class Hangman extends AbstractGame {
 
     private static final String WORDLIST_FILENAME = "words.txt";
-    public static final String ANSI_RESET = "\u001B[0m";
-    public static final String ANSI_RED = "\u001B[31m";
-    public static final String ANSI_YELLOW = "\u001B[33m";
-    public static final String ANSI_GREEN = "\u001B[32m";
+    private static final String ANSI_RESET = "\u001B[0m";
+    private static final String ANSI_RED = "\u001B[31m";
+    private static final String ANSI_YELLOW = "\u001B[33m";
+    private static final String ANSI_GREEN = "\u001B[32m";
 
     private List<Character> guessWords = new ArrayList<>();
     private String secretWord;
     private int numberOfGuess = 8;
     private boolean isChange = false;
-
+    private static TimeWatch watch = TimeWatch.start();
+    private boolean winning = false;
     public Hangman() {
     }
 
     @Override
     public void run() {
         System.out.println(ANSI_GREEN + "* * * * * * * * HANGMAN * * * * * * * * " + ANSI_RESET);
+        secretWord = null;
+        guessWords .clear();
         secretWord = getWord();
         System.out.println(ANSI_GREEN + "\"Hey my friend, we are going to hang you.\"");
         System.out.println("\"But you know what? You can guess the word and we let you free...\"");
         System.out.println("\"This the WORD. Try it! You have 8 guesses.\"" + ANSI_RESET);
+        watch.reset();
+
         while (true) {
             System.out.println(">>> " + maskTheWord(secretWord));
-            getInput();
+            processInput();
             if (!isChange) {
                 numberOfGuess--;
             }
@@ -47,6 +54,7 @@ public class Hangman implements Game {
                 return;
             }
             if (isSolved()) {
+                winning = true;
                 System.out.println("--------------------------------------");
                 System.out.println("Ohh maaan, thats correct, it was: " + secretWord.toUpperCase());
                 System.out.println("Youre free -_-");
@@ -76,7 +84,7 @@ public class Hangman implements Game {
         return null;
     }
 
-    private void getInput() {
+    private void processInput() {
         isChange = false;
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String input = null;
@@ -130,7 +138,9 @@ public class Hangman implements Game {
 
     @Override
     public double getScore() {
-        return numberOfGuess * 10 + secretWord.length() * 10;
+        if(winning)
+            return (numberOfGuess * 200 + secretWord.length() * 700)/watch.getTime(TimeUnit.SECONDS);
+        return 0;
     }
 
     private void printHangMan(int numberOfGuess) {

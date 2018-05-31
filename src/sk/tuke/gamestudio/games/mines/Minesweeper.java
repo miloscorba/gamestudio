@@ -1,11 +1,11 @@
 package sk.tuke.gamestudio.games.mines;
 
-import sk.tuke.gamestudio.games.Game;
-import sk.tuke.gamestudio.games.mines.Settings.Settings;
+import sk.tuke.gamestudio.games.mines.settings.Settings;
 import sk.tuke.gamestudio.games.mines.consoleui.ConsoleUI;
 import sk.tuke.gamestudio.games.mines.consoleui.UserInterface;
 import sk.tuke.gamestudio.games.mines.core.Field;
-import sk.tuke.gamestudio.games.stones.Settings.TimeWatch;
+import sk.tuke.gamestudio.games.AbstractGame;
+import sk.tuke.gamestudio.games.TimeWatch;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Main application class.
  */
-public class Minesweeper implements Game {
+public class Minesweeper extends AbstractGame {
     /** User interface. */
     private UserInterface userInterface;
     private TimeWatch watch;
@@ -29,10 +29,6 @@ public class Minesweeper implements Game {
 
     }
 
-    public Minesweeper getInstance() {
-        return instance;
-    }
-
     public Settings getSettings() {
         return settings;
     }
@@ -43,10 +39,9 @@ public class Minesweeper implements Game {
 
     @Override
     public void run()  {
-        this.watch = TimeWatch.start();
         instance = this;
         try {
-            choosesetting();
+            chooseSetting();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -55,7 +50,7 @@ public class Minesweeper implements Game {
         this.watch = TimeWatch.start();
         if(userInterface.newGameStarted(field))
         {
-            score = getScore();
+            setScore();
         } else {
             score = 0;
         }
@@ -63,7 +58,7 @@ public class Minesweeper implements Game {
 
     public void setScore() {
         this.score = (settings.getColumnCount()*settings.getRowCount()+settings.getMineCount()*2)
-                %watch.time(TimeUnit.SECONDS);
+                %watch.getTime(TimeUnit.SECONDS);
     }
 
     @Override
@@ -71,7 +66,7 @@ public class Minesweeper implements Game {
         return this.score;
     }
 
-    public void choosesetting() throws IOException {
+    public void chooseSetting() throws IOException {
         System.out.println("************ M I N E S W E E P E R ************");
         while(true){
             System.out.println("Options: 1 - Begginer, 2 - Intermediate, 3 - Expert");

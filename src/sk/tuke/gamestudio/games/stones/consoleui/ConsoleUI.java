@@ -1,18 +1,11 @@
 package sk.tuke.gamestudio.games.stones.consoleui;
 
 import sk.tuke.gamestudio.client.ScoreRestServiceClient;
-import sk.tuke.gamestudio.entity.Score;
-import sk.tuke.gamestudio.games.stones.Settings.Settings;
-import sk.tuke.gamestudio.games.stones.Settings.TimeWatch;
+import sk.tuke.gamestudio.games.TimeWatch;
 import sk.tuke.gamestudio.games.stones.core.Direction;
 import sk.tuke.gamestudio.games.stones.core.Field;
 import sk.tuke.gamestudio.games.stones.core.GameState;
-import sk.tuke.gamestudio.service.ScoreException;
-import sk.tuke.gamestudio.service.ScoreService;
-import sk.tuke.gamestudio.service.ScoreServiceImplJPA;
-import sk.tuke.gamestudio.webservice.ScoreRestService;
 
-import javax.ejb.EJB;
 import java.io.*;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
@@ -75,8 +68,8 @@ public class ConsoleUI implements UserInterface, Serializable {
             System.out.println();
             prinHeaderLines();
         }
-        long minute = watch.time(TimeUnit.MINUTES);
-        long second = watch.time(TimeUnit.SECONDS) - minute*60;
+        long minute = watch.getTime(TimeUnit.MINUTES);
+        long second = watch.getTime(TimeUnit.SECONDS) - minute*60;
         System.out.println(ANSI_YELLOW + "\nGame is ON: " + minute + " min " + second + " sec "+ ANSI_RESET);
 
     }
@@ -107,7 +100,7 @@ public class ConsoleUI implements UserInterface, Serializable {
                     fileSaved.delete();
                 }
                 break;
-            case "time":
+            case "getTime":
                     scoreService.getBestScoresForGame("Stones");
                     break;
             case "x":

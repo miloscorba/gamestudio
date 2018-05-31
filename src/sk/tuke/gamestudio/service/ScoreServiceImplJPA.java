@@ -23,14 +23,15 @@ public class ScoreServiceImplJPA implements ScoreService {
     @Inject
     private JMSContext context;
 
-    @Resource(lookup = "jms/achievementQueue")
+    @Resource(lookup = "jms/contactWinnerBean")
     private Queue queue;
 
     @Override
     public void addScore(Score score) {
         entityManager.persist(score);
-        String text = "New great score for player: " + score.getPlayer();
-        context.createProducer().send(queue, context.createTextMessage(text));
+        //String text = "New great score for player: " + score.getPlayer();
+
+
     }
 
 
@@ -47,14 +48,4 @@ public class ScoreServiceImplJPA implements ScoreService {
                 .setParameter("game", game).setMaxResults(10).getResultList();
     }
 
-
-
-    public Score updateScore(Score score){
-        return entityManager.merge(score);
-    }
-
-    public void deleteScore(Score scoreToRemove){
-       Score score = entityManager.find(Score.class, scoreToRemove);
-       entityManager.remove(score);
-    }
 }

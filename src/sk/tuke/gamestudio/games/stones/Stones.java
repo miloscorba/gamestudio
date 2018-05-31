@@ -1,8 +1,8 @@
 package sk.tuke.gamestudio.games.stones;
 
-import sk.tuke.gamestudio.games.Game;
-import sk.tuke.gamestudio.games.stones.Settings.Settings;
-import sk.tuke.gamestudio.games.stones.Settings.TimeWatch;
+import sk.tuke.gamestudio.games.AbstractGame;
+import sk.tuke.gamestudio.games.stones.settings.Settings;
+import sk.tuke.gamestudio.games.TimeWatch;
 import sk.tuke.gamestudio.games.stones.consoleui.ConsoleUI;
 import sk.tuke.gamestudio.games.stones.consoleui.UserInterface;
 import sk.tuke.gamestudio.games.stones.core.Field;
@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
-public class Stones implements Game {
+public class Stones extends AbstractGame {
     private UserInterface userInterface;
     private Settings settings;
     private double score;
@@ -76,7 +76,7 @@ public class Stones implements Game {
 
     public double setScore() {
         return (settings.getColumnCount()*settings.getRowCount()*settings.getCoeficient())
-                %watch.time(TimeUnit.SECONDS);
+                %watch.getTime(TimeUnit.SECONDS);
     }
 
     @Override

@@ -4,6 +4,7 @@ import sk.tuke.gamestudio.entity.Rating;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class RatingServiceImplJPA implements  RatingService {
                     .setParameter("game", rating.getGame())
                     .setParameter("name", rating.getName())
                     .getSingleResult();
-        } catch (Exception e) {
+        } catch (NoResultException e) {
             oldRating = null;
         }
         if(oldRating == null) {

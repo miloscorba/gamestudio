@@ -1,9 +1,8 @@
 package sk.tuke.gamestudio.games.stones.core;
 
-import sk.tuke.gamestudio.games.stones.Settings.Settings;
+import sk.tuke.gamestudio.games.stones.settings.Settings;
 
 import java.io.Serializable;
-import java.util.Random;
 
 /**
  * Field represents playing field and game logic.

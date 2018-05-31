@@ -70,38 +70,7 @@ public class CommentRestServiceClient implements CommentService {
 
     }
 
-    public void printList(List<Comment> list, String game){
-        int index = 1;
-        if(game != null){
-            System.out.println(ANSI_GREEN + "- - - - C o M e N T S  of " + game.toUpperCase() + " G a M E - - - - " + ANSI_RESET);
-            for(Comment comment : list){
-                System.out.println(index + ". "
-                        + comment.getName() + ": "
-                        + comment.getComment());
-                index++;
-            }
-            System.out.println();
-        } else {
-            System.out.println(ANSI_GREEN +"- - - - C o M e N T S - - - -" + ANSI_RESET);
-            for(Comment comment : list){
-                System.out.println(index + ". "
-                        + comment.getName()
-                        + " (" + comment.getGame() + ")"
-                        + ": " + comment.getComment());
-                index++;
-            }
-            System.out.println();
-        }
-    }
 
-    public void createComment(Class clazz, String nameOfPlayer){
-        Comment comment = new Comment();
-        System.out.println("Your Comment: ");
-        comment.setComment(getInput());
-        comment.setGame(clazz.getSimpleName());
-        comment.setName(nameOfPlayer);
-        addComment(comment);
-    }
 
     public String getInput() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

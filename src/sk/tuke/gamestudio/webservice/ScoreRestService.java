@@ -66,14 +66,14 @@ public class ScoreRestService {
 //        return Response.ok(score).build();
 //    }
 
-    public void printScoreList(String game){
-        List<Score> listOfScore = scoreService.getBestScoresForGame(game);
-        int index = 0;
-        for(Score s: listOfScore){
-            System.out.println(index + ". " + s.getPlayer() + ": " + s.getScore()/1000/60 + "min "
-                    + s.getScore()/1000%60 + "sec");
-        }
-    }
+//    public void printScoreList(String game){
+//        List<Score> listOfScore = scoreService.getBestScoresForGame(game);
+//        int index = 0;
+//        for(Score s: listOfScore){
+//            System.out.println(index + ". " + s.getPlayer() + ": " + s.getScore()/1000/60 + "min "
+//                    + s.getScore()/1000%60 + "sec");
+//        }
+//    }
 
 }
 

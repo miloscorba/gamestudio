@@ -1,6 +1,6 @@
 package sk.tuke.gamestudio.games.mines.core;
 
-import sk.tuke.gamestudio.games.mines.Settings.Settings;
+import sk.tuke.gamestudio.games.mines.settings.Settings;
 
 import java.util.Random;
 

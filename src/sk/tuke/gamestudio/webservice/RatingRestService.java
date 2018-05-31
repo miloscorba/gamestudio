@@ -24,7 +24,7 @@ public class RatingRestService {
     @GET
     @Path("/{game}")
     @Produces("application/json")
-    public String averageRating(@PathParam("game") String game){
+    public String getAverageRating(@PathParam("game") String game){
         return ratingService.averageRating(game);
     }
 

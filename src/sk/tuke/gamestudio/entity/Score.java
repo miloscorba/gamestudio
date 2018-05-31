@@ -7,6 +7,8 @@ import java.io.Serializable;
 @NamedQueries({
         @NamedQuery(name = "Score.getBestScoresForGame",
                 query = "SELECT s FROM Score s WHERE s.game=:game ORDER BY s.score DESC"),
+        @NamedQuery(name = "Score.getTheBestScore",
+                query = "SELECT s FROM Score s WHERE s.game=:game ORDER BY s.score DESC"),
 })
 
 public class Score implements Serializable {
@@ -65,7 +67,7 @@ public class Score implements Serializable {
                 "ident=" + ident +
                 ", player='" + player + '\'' +
                 ", game='" + game + '\'' +
-                ", time=" + score /60 + "min " + score %60 + "sec " +
+                ", getTime=" + score /60 + "min " + score %60 + "sec " +
                 '}';
     }
 }

@@ -44,22 +44,4 @@ public class ScoreRestServiceClient implements ScoreService {
         }
     }
 
-    public void printList(List<Score> list, String game) {
-        int index = 1;
-        if (game != null) {
-            boolean first = true;
-            System.out.println(ANSI_GREEN + "- - - " + game + " H a L L  of  F a M e - - -" + ANSI_RESET);
-            for (Score score : list) {
-                if(first) {
-                    System.out.println("------ THe BeST ------");
-                }
-                System.out.println(index + ". " + score.getPlayer() + ": " + score.getScore());
-                if(first) {
-                    System.out.println("----------------------");
-                }
-                first = false;
-                index++;
-            }
-        }
-    }
 }
